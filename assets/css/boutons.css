@@ -1,0 +1,30 @@
+.bouton {
+  border: 4px double #cccccc;
+  padding: 0.2vw 1vw 0.2vw 1vw;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: orange;
+  transition: 0.5s;
+}
+
+.bouton:hover {
+  cursor: pointer;
+  filter: brightness(150%);
+  transition: 0.5s;
+}
+
+.closeBouton {
+  border: 4px double #cccccc;
+  padding: 0.2vw 1vw 0.2vw 1vw;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  transition: 0.5s;
+}
+
+.closeBouton:hover {
+  cursor: pointer;
+  filter: brightness(150%);
+  transition: 0.5s;
+}/*# sourceMappingURL=boutons.css.map */

@@ -1,0 +1,152 @@
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: black;
+  background-image: url(../img/map.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: acme;
+}
+body main {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main > section:nth-child(1) {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main > section:nth-child(1) > article {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  row-gap: 3vh;
+  background-color: white;
+  color: black;
+  padding: 1.5vw;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+body main > section:nth-child(1) > article > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+}
+body main > section:nth-child(1) > article > div > input {
+  box-sizing: border-box;
+  padding: 1vw;
+  border-radius: 5px;
+  width: 100%;
+}
+body main > section:nth-child(1) > article > div:nth-child(4) > h3 {
+  color: red;
+}
+body main > section:nth-child(1) > article > div:nth-child(5) > span {
+  display: flex;
+  justify-content: end;
+}
+body main section:nth-child(2) {
+  display: none;
+  width: 100%;
+}
+body main section:nth-child(2) > article {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  row-gap: 3vh;
+  background-color: white;
+  color: black;
+  padding: 1.5vw;
+  box-shadow: 5px 5px 5px black;
+}
+body main section:nth-child(2) > article > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+}
+body main section:nth-child(2) > article > div > input {
+  padding: 0.5vw;
+}
+body main section:nth-child(2) > article > div > input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1vw;
+  border-radius: 5px;
+}
+body main section:nth-child(2) > article > div > textarea {
+  padding: 1vw;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+body main section:nth-child(2) > article > div:nth-child(2) > h3 {
+  color: red;
+}
+body main section:nth-child(2) > article > div:nth-child(3) > span {
+  display: flex;
+  justify-content: end;
+}
+body main section:nth-child(2) > article:nth-child(1) {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+body main section:nth-child(2) > article:nth-child(2) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+body main section:nth-child(2) > article:nth-child(2) > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  height: 100%;
+}
+body main section:nth-child(2) > article:nth-child(2) > div:nth-child(3) > span {
+  display: flex;
+  justify-content: end;
+}
+body main > section:nth-child(3) {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 200vh;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+body main > section:nth-child(4) {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  width: 30vw;
+  height: 25vh;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  background-color: black;
+  border: white 2px solid;
+  transform: translate(-50%, -50%);
+}
+body main > section:nth-child(4) > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body main > section:nth-child(4) > article > div > div {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=newAccount.css.map */

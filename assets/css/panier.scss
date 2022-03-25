@@ -1,0 +1,145 @@
+$site: acme;
+.supprimerBtn {
+    border: 4px double black;
+    padding: .1vw 1vw .1vw 1vw;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    transition: .5s;
+    &:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        border: 4px double white;
+        transition: .5s;
+    }
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $site;
+    row-gap: 2vh;
+    background-color: black;
+    background-image: url(../img/map.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+        width: 80%;
+        row-gap: 5vh;
+        > section:nth-child(1) {
+            width: 70%;
+            display: flex;
+            justify-content: start;
+            > article {
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+                > div {
+                    > button {
+                        display: none;
+                    }
+                }
+            }
+        }
+        > section:nth-child(2) {
+            width: 80%;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 5vh;
+            > table {
+                width: 60%;
+                > thead {
+                    text-align: center;
+                    > tr {
+                        background-color: black;
+                        color: white;
+                    }
+                }
+                > tbody {
+                    border-collapse: collapse;
+                    > tr {
+                        color: black;
+                        > td:nth-child(1) {
+                            text-align: left;
+                        }
+                        > td {
+                            background-color: white;
+                            text-align: right;
+                            padding: .5vh .5vw;
+                        }
+                        > td:nth-child(5) {
+                            text-align: left;
+                            background-color: transparent;
+                        }
+                    }
+                }
+                > tfoot {
+                    > tr {
+                        > td:nth-child(3) {
+                            text-align: right;
+                            background-color: black;
+                            color: white;
+                            padding: .5vh .5vw;
+                        }
+                    }
+                }
+            }
+            > div {
+                width: 25%;
+                display: flex;
+                justify-content: end;
+                column-gap: 1vw;
+            }
+        }
+        > section:nth-child(3) {
+            display: none;
+            position: fixed;
+            width: 100vw;
+            height: 200vh;
+            background-color: black;
+            opacity: .5;
+            z-index: 1;
+        }
+        > section:nth-child(4) {
+            display: none;
+            position: fixed;
+            justify-content: center;
+            width: 30vw;
+            height: 25vh;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            background-color: black;
+            border: white 2px solid;
+            transform: translate(-50%, -50%);
+            > article {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                > div:nth-child(1) {
+                    height: 50%;
+                    > div:nth-child(1) {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                    }
+                }
+            }
+        }
+    }
+}

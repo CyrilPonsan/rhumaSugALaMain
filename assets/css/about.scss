@@ -1,0 +1,53 @@
+$site: acme;
+body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $site;
+    row-gap: 2vh;
+    background-color: black;
+    background-image: url(../img/map.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    main {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+        width: 100vw;
+        > section {
+            width: 100vw;
+            > article {
+                display: flex;
+                align-items: center;
+                column-gap: 1vw;
+                width: 80%;
+                background-color: white;
+                color: black;
+                font-family: $site;
+                padding: .5vw;
+                > div {
+                    > img {
+                        width: 30vw;
+                        height: auto;
+                    }
+                }
+                > div:nth-child(2) {
+                    text-align: justify;
+                }
+            }
+        }
+        > section:nth-child(odd) {
+            display: flex;
+            justify-content: start;
+        }
+        > section:nth-child(even) {
+            display: flex;
+            justify-content: end;
+        }
+    }
+}

@@ -1,0 +1,249 @@
+.tabs {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -moz-column-gap: 3vw;
+       column-gap: 3vw;
+  font-family: acme;
+  row-gap: 2vh;
+  background-color: black;
+  background-image: url(../img/map.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+}
+body main {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  row-gap: 5vh;
+  width: 90%;
+  height: 70%;
+}
+body main > section:nth-child(1) {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  row-gap: 5vh;
+}
+body main > section:nth-child(1) > article {
+  height: calc(50px + 4vw);
+  width: calc(50px + 4vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  background-color: white;
+  padding: 0.75vw;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+  box-sizing: content-box;
+}
+body main > section:nth-child(1) > article:hover {
+  cursor: pointer;
+}
+body main > section:nth-child(1) > article > div:nth-child(1) > h2 {
+  font-size: calc(12px + 1vw);
+}
+body main > section:nth-child(1) > article > div:nth-child(2) img {
+  height: calc(50px + 1vw);
+  width: calc(50px + 1vw);
+}
+body main > section:nth-child(2) {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+}
+body main > section:nth-child(2) h2 {
+  display: flex;
+  justify-content: start;
+}
+body main > section:nth-child(2) > article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+body main > section:nth-child(2) > article > div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main > section:nth-child(2) > article > div > table {
+  width: 80%;
+}
+body main > section:nth-child(2) > article > div > table:hover {
+  cursor: pointer;
+}
+body main > section:nth-child(2) > article > div > table > tbody > tr {
+  background-color: black;
+  color: white;
+}
+body main > section:nth-child(2) > article > div > table > tbody > tr > td {
+  width: 10vw;
+  padding: 0.5vw 0.5vh;
+  text-align: center;
+}
+body main > section:nth-child(2) > article > div > table > tbody > tr > td:nth-child(3) {
+  width: 5vw;
+}
+body main > section:nth-child(2) > article > div > table > tbody > .detailVente {
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+body main section:nth-child(3) {
+  display: none;
+  width: 50%;
+  height: 90%;
+}
+body main section:nth-child(3) > article {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  row-gap: 3vh;
+  background-color: white;
+  color: black;
+  padding: 1.5vw;
+  box-shadow: 5px 5px 5px black;
+}
+body main section:nth-child(3) > article > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+}
+body main section:nth-child(3) > article > div > input {
+  padding: 0.5vw;
+}
+body main section:nth-child(3) > article > div > input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1vw;
+  border-radius: 5px;
+}
+body main section:nth-child(3) > article > div > textarea {
+  padding: 1vw;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+body main section:nth-child(3) > article > div:nth-child(2) > h3 {
+  color: red;
+}
+body main section:nth-child(3) > article > div:nth-child(3) > span {
+  display: flex;
+  justify-content: end;
+}
+body main section:nth-child(3) > article:nth-child(1) {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+body main section:nth-child(3) > article:nth-child(2) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+body main section:nth-child(3) > article:nth-child(2) > div:nth-child(2) {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main section:nth-child(3) > article:nth-child(2) > div:nth-child(2) > h3 {
+  display: flex;
+  align-items: center;
+}
+body main section:nth-child(3) > article:nth-child(2) > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  height: 100%;
+}
+body main section:nth-child(3) > article:nth-child(2) > div:nth-child(3) > span {
+  display: flex;
+  justify-content: end;
+}
+body main > section:nth-child(4) {
+  width: 75%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3vh;
+}
+body main > section:nth-child(4) > article {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  row-gap: 3vh;
+  background-color: white;
+  color: black;
+  padding: 1.5vw;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+body main > section:nth-child(4) > article > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+}
+body main > section:nth-child(4) > article > div > input {
+  box-sizing: border-box;
+  padding: 1vw;
+  border-radius: 5px;
+  width: 100%;
+}
+body main > section:nth-child(4) > article > div:nth-child(4) > h3 {
+  color: red;
+}
+body main > section:nth-child(4) > article > div:nth-child(5) > span {
+  display: flex;
+  justify-content: end;
+}
+body main > section:nth-child(5) {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+body main > section:nth-child(6) {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  width: 30vw;
+  height: 25vh;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  background-color: black;
+  border: white 2px solid;
+  transform: translate(-50%, -50%);
+}
+body main > section:nth-child(6) > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body main > section:nth-child(6) > article > div > div {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=accountManagement.css.map */

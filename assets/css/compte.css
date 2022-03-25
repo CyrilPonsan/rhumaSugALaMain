@@ -1,0 +1,40 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: acme;
+  row-gap: 2vh;
+  background-color: black;
+  background-image: url(../img/map.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+}
+body main {
+  width: 80%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main > section {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body main > section > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  row-gap: 3vh;
+  align-items: center;
+  padding: 0 0 3vh;
+}
+body main > section > article:nth-child(1) {
+  border-bottom: 1px solid white;
+}/*# sourceMappingURL=compte.css.map */

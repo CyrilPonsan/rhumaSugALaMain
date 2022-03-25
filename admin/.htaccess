@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !main.php
+RewriteCond %{REQUEST_URI} !public
+
+RewriteRule ^(.*) main.php/$1
